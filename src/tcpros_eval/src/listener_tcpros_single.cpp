@@ -17,11 +17,9 @@ struct timespec tp1;		// for clock
 
 FILE *fp;			// for file io
 
-// eval_loop_count is updated when evaluation ends in each data size.
-// // 0 means evaluation of 256 bytes, 1 means evaluation of 512 bytes, ... 
-int eval_loop_count = 0;
 
-std::string output_filename = "./evaluation/subscribe_time/subscribe_time_256byte.txt";
+
+std::string output_filename = "./evaluation/subscribe_time/subscribe_time_128Kbyte.txt";
 
 void chatterCallback(const std_msgs::String::ConstPtr& msg){
 
@@ -91,14 +89,10 @@ void chatterCallback(const std_msgs::String::ConstPtr& msg){
 
 	// 評価の初期化
 	count = -1;					// initialize for next data size 
-	eval_loop_count++;				// update for next data size
-	
-	if( eval_loop_count == 1){
-	  output_filename = "./evaluation/subscribe_time/subscribe_time_128Kbyte.txt";
-	}else if( eval_loop_count == 2){
-	  // 計測終了
-	  count == EVAL_NUM;
-	}
+
+
+	// 計測終了
+	count = EVAL_NUM;
 	
   }
 }
