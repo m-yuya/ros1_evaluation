@@ -1,0 +1,13 @@
+<library path="lib/libnodelet_eval">
+  <class name="nodelet_eval/Talker" type="nodelet_eval::Talker" base_class_type="nodelet::Nodelet">
+    <description> 
+      A node to add a value and republish.
+    </description>
+  </class>
+
+  <class name="nodelet_eval/Listener" type="nodelet_eval::Listener" base_class_type="nodelet::Nodelet">
+    <description> 
+      A node to add a value and republish.
+    </description>
+  </class>
+</library>
