@@ -121,11 +121,11 @@ int main(int argc, char **argv)
 
   printf("start evaluation 256byte \n");
   while (ros::ok()) {
-	eval_ros1("./evaluation/byte_data/data_256byte.txt", "./evaluation/publish_time/publish_time_256byte.txt", chatter_pub);
-	if(count == -1){
-	  printf("break\n");
-	  break;
-	}
+    eval_ros1("./evaluation/byte_data/data_256byte.txt", "./evaluation/publish_time/publish_time_256byte.txt", chatter_pub);
+    if(count == -1){
+      printf("end this data size evaluation \n");
+      break;
+    }
     ros::spinOnce();
     loop_rate.sleep();
   }
@@ -134,11 +134,11 @@ int main(int argc, char **argv)
   
   printf("start evaluation 512byte \n");
   while (ros::ok()) {
-	eval_ros1("./evaluation/byte_data/data_512byte.txt", "./evaluation/publish_time/publish_time_512byte.txt", chatter_pub);
-	if(count == -1){
-	  printf("break\n");
-	  break;
-	}
+    eval_ros1("./evaluation/byte_data/data_512byte.txt", "./evaluation/publish_time/publish_time_512byte.txt", chatter_pub);
+    if(count == -1){
+      printf("end this data size evaluation \n");
+      break;
+    }
     ros::spinOnce();
     loop_rate.sleep();
   }
@@ -147,11 +147,11 @@ int main(int argc, char **argv)
 
   printf("start evaluation 1Kbyte \n");
   while (ros::ok()) {
-	eval_ros1("./evaluation/byte_data/data_1Kbyte.txt", "./evaluation/publish_time/publish_time_1Kbyte.txt", chatter_pub);
-	if(count == -1){
-	  printf("break\n");
-	  break;
-	}
+    eval_ros1("./evaluation/byte_data/data_1Kbyte.txt", "./evaluation/publish_time/publish_time_1Kbyte.txt", chatter_pub);
+    if(count == -1){
+      printf("end this data size evaluation \n");
+      break;
+    }
     ros::spinOnce();
     loop_rate.sleep();
   }
@@ -160,11 +160,11 @@ int main(int argc, char **argv)
 
   printf("start evaluation 2Kbyte \n");
   while (ros::ok()) {
-	eval_ros1("./evaluation/byte_data/data_2Kbyte.txt", "./evaluation/publish_time/publish_time_2Kbyte.txt", chatter_pub);
-	if(count == -1){
-	  printf("break\n");
-	  break;
-	}
+    eval_ros1("./evaluation/byte_data/data_2Kbyte.txt", "./evaluation/publish_time/publish_time_2Kbyte.txt", chatter_pub);
+    if(count == -1){
+      printf("end this data size evaluation \n");
+      break;
+    }
     ros::spinOnce();
     loop_rate.sleep();
   }
@@ -173,11 +173,11 @@ int main(int argc, char **argv)
 
   printf("start evaluation 4Kbyte \n");
   while (ros::ok()) {
-	eval_ros1("./evaluation/byte_data/data_4Kbyte.txt", "./evaluation/publish_time/publish_time_4Kbyte.txt", chatter_pub);
-	if(count == -1){
-	  printf("break\n");
-	  break;
-	}
+    eval_ros1("./evaluation/byte_data/data_4Kbyte.txt", "./evaluation/publish_time/publish_time_4Kbyte.txt", chatter_pub);
+    if(count == -1){
+      printf("end this data size evaluation \n");
+      break;
+    }
     ros::spinOnce();
     loop_rate.sleep();
   }
@@ -186,11 +186,11 @@ int main(int argc, char **argv)
 
   printf("start evaluation 8Kbyte \n");
   while (ros::ok()) {
-	eval_ros1("./evaluation/byte_data/data_8Kbyte.txt", "./evaluation/publish_time/publish_time_8Kbyte.txt", chatter_pub);
-	if(count == -1){
-	  printf("break\n");
-	  break;
-	}
+    eval_ros1("./evaluation/byte_data/data_8Kbyte.txt", "./evaluation/publish_time/publish_time_8Kbyte.txt", chatter_pub);
+    if(count == -1){
+      printf("end this data size evaluation \n");
+      break;
+    }
     ros::spinOnce();
     loop_rate.sleep();
   }
@@ -199,11 +199,11 @@ int main(int argc, char **argv)
   
   printf("start evaluation 16Kbyte \n");
   while (ros::ok()) {
-	eval_ros1("./evaluation/byte_data/data_16Kbyte.txt", "./evaluation/publish_time/publish_time_16Kbyte.txt", chatter_pub);
-	if(count == -1){
-	  printf("break\n");
-	  break;
-	}
+    eval_ros1("./evaluation/byte_data/data_16Kbyte.txt", "./evaluation/publish_time/publish_time_16Kbyte.txt", chatter_pub);
+    if(count == -1){
+      printf("end this data size evaluation \n");
+      break;
+    }
     ros::spinOnce();
     loop_rate.sleep();
   }
@@ -212,11 +212,11 @@ int main(int argc, char **argv)
 
   printf("start evaluation 32Kbyte \n");
   while (ros::ok()) {
-	eval_ros1("./evaluation/byte_data/data_32Kbyte.txt", "./evaluation/publish_time/publish_time_32Kbyte.txt", chatter_pub);
-	if(count == -1){
-	  printf("break\n");
-	  break;
-	}
+    eval_ros1("./evaluation/byte_data/data_32Kbyte.txt", "./evaluation/publish_time/publish_time_32Kbyte.txt", chatter_pub);
+    if(count == -1){
+      printf("end this data size evaluation \n");
+      break;
+    }
     ros::spinOnce();
     loop_rate.sleep();
   }
@@ -225,11 +225,11 @@ int main(int argc, char **argv)
   
   printf("start evaluation 64Kbyte \n");
   while (ros::ok()) {
-	eval_ros1("./evaluation/byte_data/data_64Kbyte.txt", "./evaluation/publish_time/publish_time_64Kbyte.txt", chatter_pub);
-	if(count == -1){
-	  printf("break\n");
-	  break;
-	}
+    eval_ros1("./evaluation/byte_data/data_64Kbyte.txt", "./evaluation/publish_time/publish_time_64Kbyte.txt", chatter_pub);
+    if(count == -1){
+      printf("end this data size evaluation \n");
+      break;
+    }
     ros::spinOnce();
     loop_rate.sleep();
   }
@@ -238,11 +238,11 @@ int main(int argc, char **argv)
 
   printf("start evaluation 128Kbyte \n");
   while (ros::ok()) {
-	eval_ros1("./evaluation/byte_data/data_128Kbyte.txt", "./evaluation/publish_time/publish_time_128Kbyte.txt", chatter_pub);
-	if(count == -1){
-	  printf("break\n");
-	  break;
-	}
+    eval_ros1("./evaluation/byte_data/data_128Kbyte.txt", "./evaluation/publish_time/publish_time_128Kbyte.txt", chatter_pub);
+    if(count == -1){
+      printf("end this data size evaluation \n");
+      break;
+    }
     ros::spinOnce();
     loop_rate.sleep();
   }
@@ -251,11 +251,11 @@ int main(int argc, char **argv)
 
   printf("start evaluation 256Kbyte \n");
   while (ros::ok()) {
-	eval_ros1("./evaluation/byte_data/data_256Kbyte.txt", "./evaluation/publish_time/publish_time_256Kbyte.txt", chatter_pub);
-	if(count == -1){
-	  printf("break\n");
-	  break;
-	}
+    eval_ros1("./evaluation/byte_data/data_256Kbyte.txt", "./evaluation/publish_time/publish_time_256Kbyte.txt", chatter_pub);
+    if(count == -1){
+      printf("end this data size evaluation \n");
+      break;
+    }
     ros::spinOnce();
     loop_rate.sleep();
   }
@@ -264,11 +264,11 @@ int main(int argc, char **argv)
   
   printf("start evaluation 512Kbyte \n");
   while (ros::ok()) {
-	eval_ros1("./evaluation/byte_data/data_512Kbyte.txt", "./evaluation/publish_time/publish_time_512Kbyte.txt", chatter_pub);
-	if(count == -1){
-	  printf("break\n");
-	  break;
-	}
+    eval_ros1("./evaluation/byte_data/data_512Kbyte.txt", "./evaluation/publish_time/publish_time_512Kbyte.txt", chatter_pub);
+    if(count == -1){
+      printf("end this data size evaluation \n");
+      break;
+    }
     ros::spinOnce();
     loop_rate.sleep();
   }
@@ -277,11 +277,11 @@ int main(int argc, char **argv)
   
   printf("start evaluation 1Mbyte \n");
   while (ros::ok()) {
-	eval_ros1("./evaluation/byte_data/data_1Mbyte.txt", "./evaluation/publish_time/publish_time_1Mbyte.txt", chatter_pub);
-	if(count == -1){
-	  printf("break\n");
-	  break;
-	}
+    eval_ros1("./evaluation/byte_data/data_1Mbyte.txt", "./evaluation/publish_time/publish_time_1Mbyte.txt", chatter_pub);
+    if(count == -1){
+      printf("end this data size evaluation \n");
+      break;
+    }
     ros::spinOnce();
     loop_rate.sleep();
   }
@@ -290,11 +290,11 @@ int main(int argc, char **argv)
   
   printf("start evaluation 2Mbyte \n");
   while (ros::ok()) {
-	eval_ros1("./evaluation/byte_data/data_2Mbyte.txt", "./evaluation/publish_time/publish_time_2Mbyte.txt", chatter_pub);
-	if(count == -1){
-	  printf("break\n");
-	  break;
-	}
+    eval_ros1("./evaluation/byte_data/data_2Mbyte.txt", "./evaluation/publish_time/publish_time_2Mbyte.txt", chatter_pub);
+    if(count == -1){
+      printf("end this data size evaluation \n");
+      break;
+    }
     ros::spinOnce();
     loop_rate.sleep();
   }
@@ -303,11 +303,11 @@ int main(int argc, char **argv)
   
   printf("start evaluation 4Mbyte \n");
   while (ros::ok()) {
-	eval_ros1("./evaluation/byte_data/data_4Mbyte.txt", "./evaluation/publish_time/publish_time_4Mbyte.txt", chatter_pub);
-	if(count == -1){
-	  printf("break\n");
-	  break;
-	}
+    eval_ros1("./evaluation/byte_data/data_4Mbyte.txt", "./evaluation/publish_time/publish_time_4Mbyte.txt", chatter_pub);
+    if(count == -1){
+      printf("end this data size evaluation \n");
+      break;
+    }
     ros::spinOnce();
     loop_rate.sleep();
   }
@@ -315,15 +315,15 @@ int main(int argc, char **argv)
   // followthrough transactions
   count = 0;
   while (ros::ok()) {
-	std_msgs::String msg;
-	std::stringstream ss;
-	ss << "end" << count;
-	msg.data = ss.str();
-	chatter_pub.publish(msg);
-	if( count++ == 5){
-	  printf("---end evaluation---\n");
-	  break;
-	}
+    std_msgs::String msg;
+    std::stringstream ss;
+    ss << "end" << count;
+    msg.data = ss.str();
+    chatter_pub.publish(msg);
+    if(count++ == 100){
+      printf("---end evaluation---\n");
+      break;
+    }
     ros::spinOnce();
     loop_rate.sleep();
   }

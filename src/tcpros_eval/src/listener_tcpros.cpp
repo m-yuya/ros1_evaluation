@@ -81,7 +81,7 @@ void chatterCallback(const std_msgs::String::ConstPtr& msg){
 		}
 	  }
 
-	  // printf("output data\n");
+	  printf("output data\n");
 
 	  fclose(fp);
 
@@ -140,7 +140,7 @@ int main(int argc, char **argv)
 	exit(EXIT_FAILURE);
   }
   
-  ros::init(argc, argv, "listener");
+  ros::init(argc, argv, "listener1");
   
   ros::NodeHandle n;
 

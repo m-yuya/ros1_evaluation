@@ -17,9 +17,21 @@ struct timespec tp1;		// for clock
 
 FILE *fp;			// for file io
 
-
-
+// std::string output_filename = "./evaluation/subscribe_time/subscribe_time_256byte.txt";
+// std::string output_filename = "./evaluation/subscribe_time/subscribe_time_512byte.txt";
+// std::string output_filename = "./evaluation/subscribe_time/subscribe_time_1Kbyte.txt";
+// std::string output_filename = "./evaluation/subscribe_time/subscribe_time_2Kbyte.txt";
+// std::string output_filename = "./evaluation/subscribe_time/subscribe_time_4Kbyte.txt";
+// std::string output_filename = "./evaluation/subscribe_time/subscribe_time_8Kbyte.txt";
+// std::string output_filename = "./evaluation/subscribe_time/subscribe_time_16Kbyte.txt";
+// std::string output_filename = "./evaluation/subscribe_time/subscribe_time_32Kbyte.txt";
+// std::string output_filename = "./evaluation/subscribe_time/subscribe_time_64Kbyte.txt";
 std::string output_filename = "./evaluation/subscribe_time/subscribe_time_128Kbyte.txt";
+// std::string output_filename = "./evaluation/subscribe_time/subscribe_time_256Kbyte.txt";
+// std::string output_filename = "./evaluation/subscribe_time/subscribe_time_512Kbyte.txt";
+// std::string output_filename = "./evaluation/subscribe_time/subscribe_time_1Mbyte.txt";
+// std::string output_filename = "./evaluation/subscribe_time/subscribe_time_2Mbyte.txt";
+// std::string output_filename = "./evaluation/subscribe_time/subscribe_time_4Mbyte.txt";
 
 void chatterCallback(const std_msgs::String::ConstPtr& msg){
 

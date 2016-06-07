@@ -11,7 +11,7 @@
 #include <sys/mman.h>		// mlock
 #include <sched.h>		// sched
 
-#define EVAL_NUM 120		// evaluation number for each data size
+#define EVAL_NUM 3		// evaluation number for each data size
 #define PUBLISH_Hz 10
 
 int i, count = -1;		// count is current evaluation number (< EVAL_NUM)
@@ -123,7 +123,7 @@ int main(int argc, char **argv)
   while (ros::ok()) {
 	eval_ros1("./evaluation/byte_data/data_128Kbyte.txt", "./evaluation/publish_time/publish_time_128Kbyte.txt", chatter_pub);
 	if(count == -1){
-	  printf("break\n");
+	  printf("end this data size evaluation \n");
 	  break;
 	}
     ros::spinOnce();
@@ -133,20 +133,20 @@ int main(int argc, char **argv)
   usleep(1000000);
 
   // followthrough transactions
-  count = 0;
-  while (ros::ok()) {
-	std_msgs::String msg;
-	std::stringstream ss;
-	ss << "end" << count;
-	msg.data = ss.str();
-	chatter_pub.publish(msg);
-	if( count++ == 5){
-	  printf("---end evaluation---\n");
-	  break;
-	}
-    ros::spinOnce();
-    loop_rate.sleep();
-  }
+  // count = 0;
+  // while (ros::ok()) {
+  // 	std_msgs::String msg;
+  // 	std::stringstream ss;
+  // 	ss << "end" << count;
+  // 	msg.data = ss.str();
+  // 	chatter_pub.publish(msg);
+  // 	if( count++ == 5){
+  // 	  printf("---end evaluation---\n");
+  // 	  break;
+  // 	}
+  //   ros::spinOnce();
+  //   loop_rate.sleep();
+  // }
   
   return 0;
 }
