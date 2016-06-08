@@ -8,7 +8,7 @@
 #include <sys/mman.h>		// mlock
 #include <sched.h>		// sched
 
-#define EVAL_NUM 120
+#define EVAL_NUM 100
 
 int i, count = -1, init_num_int;
 double  subscribe_time[EVAL_NUM];
@@ -26,11 +26,11 @@ FILE *fp;			// for file io
 // std::string output_filename = "./evaluation/subscribe_time/subscribe_time_16Kbyte.txt";
 // std::string output_filename = "./evaluation/subscribe_time/subscribe_time_32Kbyte.txt";
 // std::string output_filename = "./evaluation/subscribe_time/subscribe_time_64Kbyte.txt";
-std::string output_filename = "./evaluation/subscribe_time/subscribe_time_128Kbyte.txt";
+// std::string output_filename = "./evaluation/subscribe_time/subscribe_time_128Kbyte.txt";
 // std::string output_filename = "./evaluation/subscribe_time/subscribe_time_256Kbyte.txt";
 // std::string output_filename = "./evaluation/subscribe_time/subscribe_time_512Kbyte.txt";
 // std::string output_filename = "./evaluation/subscribe_time/subscribe_time_1Mbyte.txt";
-// std::string output_filename = "./evaluation/subscribe_time/subscribe_time_2Mbyte.txt";
+std::string output_filename = "./evaluation/subscribe_time/subscribe_time_2Mbyte.txt";
 // std::string output_filename = "./evaluation/subscribe_time/subscribe_time_4Mbyte.txt";
 
 void chatterCallback(const std_msgs::String::ConstPtr& msg){

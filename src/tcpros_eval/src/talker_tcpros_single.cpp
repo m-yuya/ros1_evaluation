@@ -11,7 +11,7 @@
 #include <sys/mman.h>		// mlock
 #include <sched.h>		// sched
 
-#define EVAL_NUM 3		// evaluation number for each data size
+#define EVAL_NUM 100		// evaluation number for each data size
 #define PUBLISH_Hz 10
 
 int i, count = -1;		// count is current evaluation number (< EVAL_NUM)
@@ -107,8 +107,8 @@ int main(int argc, char **argv)
   usleep(1000);
   sched_param  pri = {94}; 
   if (sched_setscheduler(0, SCHED_FIFO, &pri) == -1) { // set FIFO scheduler
-	perror("sched_setattr");
-	exit(EXIT_FAILURE);
+    perror("sched_setattr");
+    exit(EXIT_FAILURE);
   }
 
   ros::init(argc, argv, "talker");
@@ -119,13 +119,13 @@ int main(int argc, char **argv)
   
   ros::Rate loop_rate(PUBLISH_Hz);
 
-  printf("start evaluation *byte \n");
+  printf("start evaluation 2Mbyte \n");
   while (ros::ok()) {
-	eval_ros1("./evaluation/byte_data/data_128Kbyte.txt", "./evaluation/publish_time/publish_time_128Kbyte.txt", chatter_pub);
-	if(count == -1){
-	  printf("end this data size evaluation \n");
-	  break;
-	}
+    eval_ros1("./evaluation/byte_data/data_2Mbyte.txt", "./evaluation/publish_time/publish_time_2Mbyte.txt", chatter_pub);
+    if(count == -1){
+      printf("end this data size evaluation \n");
+      break;
+    }
     ros::spinOnce();
     loop_rate.sleep();
   }
