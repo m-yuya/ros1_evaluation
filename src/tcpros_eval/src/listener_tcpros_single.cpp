@@ -57,10 +57,14 @@ void chatterCallback(const std_msgs::String::ConstPtr& msg){
 	subscribe_time[count] = (double)tp1.tv_sec + (double)tp1.tv_nsec/ (double)1000000000L;
 
 	// printf("%18.9lf\n",subscribe_time[count]);
-	printf("subscribe_time[%2d]:\t%18.9lf\n", count,subscribe_time[count]);
+	// printf("subscribe_time[%2d]:\t%18.9lf\n", count,subscribe_time[count]);
 
 	// printf("I heard: [%s]\n", receiver.data.c_str());
 	// printf("I heard: [%c]\n",* ( msg->data.c_str()) );
+
+	char* p = (char *) msg->data.c_str();
+	p++;
+	printf("I heard: [%c%c]\n",* ( msg->data.c_str()), *p);
 
 	// printf("Time Span:\t%ld.%09ld\n", tp1.tv_sec, tp1.tv_nsec);
 
